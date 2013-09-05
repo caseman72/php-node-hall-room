@@ -35,7 +35,7 @@
 			bot.io.on("error", function() { process.exit(1); });
 
 			bot.io.on("connected", function() {
-				bot.sendMessage(room_id, "group", standup + "\n-----------------------------------------");
+				bot.sendMessage(room_id, "group", standup);
 			});
 		}
 	});

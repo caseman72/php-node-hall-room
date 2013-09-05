@@ -36,7 +36,7 @@ $yesterday_string = $prev_contents
 
 $today_string = preg_replace("/^/m", "#- ", $yesterday_string);
 
-// Default block
+// default block
 $standup_template = <<<EOS
 Today:
 $today_string
@@ -49,6 +49,8 @@ Confidence:
 
 Blocks:
 * None
+
+----------------------------------------
 EOS;
 
 $today = date('Y-m-d', $now);
