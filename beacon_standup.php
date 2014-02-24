@@ -89,7 +89,7 @@ else {
 			die("Exiting - no entry for Today!\n");
 		}
 
-		system("/usr/local/n/versions/0.8.20/bin/node ./post-to-hall.js '{$room_id}' '{$curr_file}'");
+		system("node ./post-to-hall.js '{$room_id}' '{$curr_file}'");
 	}
 	else
 	{
