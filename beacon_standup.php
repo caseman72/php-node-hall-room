@@ -1,5 +1,7 @@
 #!/usr/bin/php
 <?php
+date_default_timezone_set('America/Los_Angeles');
+
 $cwd = dirname(__FILE__);
 
 // must have .standups
