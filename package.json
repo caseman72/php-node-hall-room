@@ -1,0 +1,6 @@
+{
+  "name": "php-node-hall-room",
+  "dependencies": {
+    "node-hall-client": "git+https://github.com/caseman72/node-hall-client.git"
+  }
+}
