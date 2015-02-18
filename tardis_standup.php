@@ -11,7 +11,7 @@ if (!file_exists($dest)) {
 }
 
 // roomid
-$room_id = trim(getenv('BEACON_ROOMID'));
+$room_id = trim(getenv('TARDIS_ROOMID'));
 
 // init time
 $now = $yestertime = strtotime('midnight');
@@ -89,7 +89,8 @@ else {
 			die("Exiting - no entry for Today!\n");
 		}
 
-		system("node ./post-to-hall.js '{$room_id}' '{$curr_file}'");
+		#system("node '${cwd}/post-to-hall.js' '{$room_id}' '{$curr_file}'");
+		system("/usr/local/bin/n use 0.10.28 '${cwd}/hipchat-project-tardis.js' '{$curr_file}'");
 	}
 	else
 	{
